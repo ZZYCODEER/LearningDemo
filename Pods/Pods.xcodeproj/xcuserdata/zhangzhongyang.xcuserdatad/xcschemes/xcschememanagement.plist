@@ -14,29 +14,8 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>5D0230BC649DB8BF9FCBD1A11DE727A1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9BCAC8E831C02876335A99B3BED81C69</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B4E16E0B90C93402AEDE7EF3C1CF9E58</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>
