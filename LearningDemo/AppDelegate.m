@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import <JSPatchPlatform/JSPatch.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ViewController *vc = [[ViewController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyWindow];
+    
+    
+    
+//    [JSPatch startWithAppKey:@"c922afb9860cf718"];
+//    [JSPatch sync];
+//    [JSPatch testScriptInBundle];
+    
+    
     return YES;
 }
 

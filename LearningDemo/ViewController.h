@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+//void (^ZZYBlock)() = ^(){
+//    NSLog(@"this is a global block");
+//};
+
+
 @interface ViewController : UIViewController
 
 
