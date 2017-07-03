@@ -24,6 +24,7 @@
 #import "EffectiveVC.h"
 #import "HostMacro.h"
 #import "RequestVC.h"
+#import "DeepCopyVC.h"
 
 @interface ViewController ()<UIAlertViewDelegate, UIScrollViewDelegate>
 @property (nonatomic, strong) PersonCopy *person;
@@ -39,7 +40,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        NSLog( @"//////初始化");
+//        NSLog( @"//////初始化");
         
     }
     return self;
@@ -48,7 +49,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        NSLog( @"######初始化");
+//        NSLog( @"######初始化");
     }
     return self;
 }
@@ -107,9 +108,9 @@
     NSString *string2 = [string1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *url1= [NSURL URLWithString:string1];
     
-    NSLog(@"string2 == %@", string2);
+//    NSLog(@"string2 == %@", string2);
 
-    NSLog(@"NSURL1 == %@", url1);
+//    NSLog(@"NSURL1 == %@", url1);
     
 //    NSString *string2 = @"http://img.souche.com/20151207/png/364cf25f6cb8439bda98dc2f1ce3ccb1.png@1e_270w_74h_1c_0i_2o_100Q_1x.jpg?watermark=2&type=ZmFuZ3poZW5naGVpdGk&size=36&text=6L-I6aqP5Lya5rG96L2m&color=IzMzMzMzMw&s=0&t=90&p=5&x=10&voffset=0";
 //    NSURL *url2 = [NSURL URLWithString:string2];
@@ -118,7 +119,7 @@
     
     NSDictionary *dic1 = @{@"str1":@"1234", @"str2":@"5678"};
     self.dataDic = dic1.copy;
-    NSLog(@"%@", _dataDic);
+//    NSLog(@"%@", _dataDic);
     
     
 }
@@ -186,7 +187,8 @@
 //        [self.button setTitle:name forState:UIControlStateNormal];
 //    }];
     
-    RequestVC *vc = [[RequestVC alloc] init];
+//    RequestVC *vc = [[RequestVC alloc] init];
+    DeepCopyVC *vc = [[DeepCopyVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
     
@@ -214,7 +216,7 @@
     NSString *fileName = [path stringByAppendingString:@"123.plist"];
     NSLog(@"%@", fileName);
     NSArray *array = [NSArray arrayWithContentsOfFile:fileName];
-    NSLog(@"resultArray ==  %@", array);
+//    NSLog(@"resultArray ==  %@", array);
     
     return array;
 }
@@ -222,7 +224,7 @@
 #pragma mark - UIScrollView delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"---%f", scrollView.contentOffset.x);
+//   NSLog(@"---%f", scrollView.contentOffset.x);
 }
 
 

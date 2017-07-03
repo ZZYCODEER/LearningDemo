@@ -27,6 +27,7 @@
 		ED0D978A1E7D226B00F15AD0 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D97751E7D226B00F15AD0 /* CollectionView.m */; };
 		ED0D978B1E7D226B00F15AD0 /* CustomeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D97771E7D226B00F15AD0 /* CustomeBtn.m */; };
 		ED0D978C1E7D226B00F15AD0 /* EnlargeFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D97791E7D226B00F15AD0 /* EnlargeFlowLayout.m */; };
+		ED22D91A1F0A214900DAF171 /* DeepCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED22D9191F0A214900DAF171 /* DeepCopyVC.m */; };
 		ED3C2ABB1F08F09900D06C6B /* ZZYUserInfoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3C2ABA1F08F09900D06C6B /* ZZYUserInfoConfig.m */; };
 		ED5FDA501ECC27F700D56065 /* ZZYModule.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5FDA4F1ECC27F700D56065 /* ZZYModule.m */; };
 		ED8DB7291F089A50004D11AA /* RequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8DB7281F089A50004D11AA /* RequestVC.m */; };
@@ -119,6 +120,8 @@
 		ED0D97771E7D226B00F15AD0 /* CustomeBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomeBtn.m; sourceTree = "<group>"; };
 		ED0D97781E7D226B00F15AD0 /* EnlargeFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlargeFlowLayout.h; sourceTree = "<group>"; };
 		ED0D97791E7D226B00F15AD0 /* EnlargeFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlargeFlowLayout.m; sourceTree = "<group>"; };
+		ED22D9181F0A214900DAF171 /* DeepCopyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepCopyVC.h; sourceTree = "<group>"; };
+		ED22D9191F0A214900DAF171 /* DeepCopyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepCopyVC.m; sourceTree = "<group>"; };
 		ED34CD251DF50E4200D362A0 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		ED39375A1F04F1D200013BEE /* HostMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HostMacro.h; sourceTree = "<group>"; };
 		ED3C2AB91F08F09900D06C6B /* ZZYUserInfoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYUserInfoConfig.h; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 				EDA642891E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m */,
 				EDF02C6D1EB1DA9A00819523 /* EffectiveVC.h */,
 				EDF02C6E1EB1DA9A00819523 /* EffectiveVC.m */,
+				ED22D9181F0A214900DAF171 /* DeepCopyVC.h */,
+				ED22D9191F0A214900DAF171 /* DeepCopyVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 				EDF842161EA854800019593A /* Person.m in Sources */,
 				ED0D97821E7D226B00F15AD0 /* KeyboradVC.m in Sources */,
 				ED5FDA501ECC27F700D56065 /* ZZYModule.m in Sources */,
+				ED22D91A1F0A214900DAF171 /* DeepCopyVC.m in Sources */,
 				EDF8BF821E7D253700DF4B42 /* AutoScrollView.m in Sources */,
 				ED0D97881E7D226B00F15AD0 /* UINavigationBar+BackGroudColor.m in Sources */,
 				ED3C2ABB1F08F09900D06C6B /* ZZYUserInfoConfig.m in Sources */,
