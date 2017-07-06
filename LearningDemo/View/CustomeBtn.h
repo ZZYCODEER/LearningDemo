@@ -10,6 +10,4 @@
 
 @interface CustomeBtn : UIButton
 
-- (void)initWithFrame:(CGRect)frame;
-
 @end

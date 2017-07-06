@@ -10,7 +10,11 @@
 
 @implementation CustomeBtn
 
-
+- (void)layoutSubviews
+{
+    [self setTitleEdgeInsets:UIEdgeInsetsMake(0, 30, 70, 30)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(30, 0, 0, 0)];
+}
 
 
 
