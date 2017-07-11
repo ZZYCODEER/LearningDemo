@@ -66,7 +66,7 @@
 //    [alert show];
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(100, 100, 100, 100);
+    btn.frame = CGRectMake(100, 100, 150, 150);
     btn.backgroundColor = [UIColor orangeColor];
     
     [btn setTitle:ALERT_TITLE forState:UIControlStateNormal];
@@ -78,7 +78,7 @@
     [self configPlistData];
     
     UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectMake(100, 250, 100, 20);
+    label.frame = CGRectMake(100, 250, 150, 20);
     label.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:label];
     

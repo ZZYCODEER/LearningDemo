@@ -33,6 +33,7 @@
 		ED5FDA501ECC27F700D56065 /* ZZYModule.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5FDA4F1ECC27F700D56065 /* ZZYModule.m */; };
 		ED8DB7291F089A50004D11AA /* RequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8DB7281F089A50004D11AA /* RequestVC.m */; };
 		ED8DB72C1F08A967004D11AA /* ZZYHTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8DB72B1F08A967004D11AA /* ZZYHTTPService.m */; };
+		ED9636C01F0E2861003C1D4E /* DataStructureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9636BF1F0E2861003C1D4E /* DataStructureVC.m */; };
 		EDA6428A1E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA642891E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m */; };
 		EDA6428D1E8EA27B00D521FA /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA6428C1E8EA27B00D521FA /* CarModel.m */; };
 		EDB291A91F0B3D2500BD827D /* AlgorithmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB291A71F0B3D2500BD827D /* AlgorithmVC.m */; };
@@ -137,6 +138,8 @@
 		ED8DB7281F089A50004D11AA /* RequestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestVC.m; sourceTree = "<group>"; };
 		ED8DB72A1F08A967004D11AA /* ZZYHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYHTTPService.h; sourceTree = "<group>"; };
 		ED8DB72B1F08A967004D11AA /* ZZYHTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYHTTPService.m; sourceTree = "<group>"; };
+		ED9636BE1F0E2861003C1D4E /* DataStructureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructureVC.h; sourceTree = "<group>"; };
+		ED9636BF1F0E2861003C1D4E /* DataStructureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStructureVC.m; sourceTree = "<group>"; };
 		EDA642881E8EA20F00D521FA /* KVCAndRuntimeToModelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndRuntimeToModelVC.h; sourceTree = "<group>"; };
 		EDA642891E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCAndRuntimeToModelVC.m; sourceTree = "<group>"; };
 		EDA6428B1E8EA27B00D521FA /* CarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarModel.h; sourceTree = "<group>"; };
@@ -368,6 +371,8 @@
 				EDB291A61F0B3D2500BD827D /* AlgorithmVC.h */,
 				EDB291A71F0B3D2500BD827D /* AlgorithmVC.m */,
 				EDB291A81F0B3D2500BD827D /* AlgorithmVC.xib */,
+				ED9636BE1F0E2861003C1D4E /* DataStructureVC.h */,
+				ED9636BF1F0E2861003C1D4E /* DataStructureVC.m */,
 				EDD36A6F1D6AABB300760AA3 /* AppDelegate.h */,
 				EDD36A701D6AABB300760AA3 /* AppDelegate.m */,
 				EDD36A721D6AABB300760AA3 /* ViewController.h */,
@@ -666,6 +671,7 @@
 				ED0D97871E7D226B00F15AD0 /* TestVC.m in Sources */,
 				EDF842161EA854800019593A /* Person.m in Sources */,
 				ED0D97821E7D226B00F15AD0 /* KeyboradVC.m in Sources */,
+				ED9636C01F0E2861003C1D4E /* DataStructureVC.m in Sources */,
 				ED5FDA501ECC27F700D56065 /* ZZYModule.m in Sources */,
 				ED22D91A1F0A214900DAF171 /* DeepCopyVC.m in Sources */,
 				EDF8BF821E7D253700DF4B42 /* AutoScrollView.m in Sources */,
