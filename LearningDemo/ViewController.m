@@ -27,6 +27,8 @@
 #import "DeepCopyVC.h"
 #import "AlgorithmVC.h"
 #import "CustomButtonVC.h"
+#import "UIScrollViewVC.h"
+#import "RunLoopVC.h"
 
 @interface ViewController ()<UIAlertViewDelegate, UIScrollViewDelegate>
 @property (nonatomic, strong) PersonCopy *person;
@@ -191,8 +193,11 @@
     
 //    RequestVC *vc = [[RequestVC alloc] init];
 //    DeepCopyVC *vc = [[DeepCopyVC alloc] init];
-    AlgorithmVC *vc = [[AlgorithmVC alloc] init];
+//    AlgorithmVC *vc = [[AlgorithmVC alloc] init];
 //    CustomButtonVC *vc = [[CustomButtonVC alloc] init];
+//    UIScrollViewVC *vc = [[UIScrollViewVC alloc] init];
+    RunLoopVC *vc = [[RunLoopVC alloc] init];
+
     [self.navigationController pushViewController:vc animated:YES];
     
     

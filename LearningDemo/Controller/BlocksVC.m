@@ -25,9 +25,40 @@ NSString *ZZY = @"zhangzhongyang";
 
     self.view.backgroundColor = [UIColor whiteColor];
     
+    int a = 10;
+    
     __weak typeof(self)weakSelf = self;
     self.testBlock = ^{
       weakSelf.name = @"周杰伦";
+        
+//        a = 20;
+        
+        /**  Block为何不能修改外部变量
+         
+         Block只会捕获外部变量的瞬间值，内部会自动生成对应类型的变量用来存放外部变量。
+         修改这些值的时候，之所以报错是因为编译器检查，因为即使你修改了也没用。
+         
+         __block: 如果变量用__block修饰，那么block内部引用的是指向外部变量的指针，
+         所以变量在block中也能修改了。
+         
+         
+         __weak: runtime会维护一个哈希表，以对象（self）的首地址为key，若干个__weak修饰的指针的自身地址所组成的数组为value，当对象被释放时，通过对象的首地址，找到所有指向它的__weak修饰的指针，并将它们都置为nil。
+         
+         
+         Q:调用Copy时不同的Block对象究竟发生了什么：
+         
+         _NSConcreteStackBlock ：从栈复制到堆
+         _NSConcreteGlobalBlock ：什么也不做
+         _NSConcreteMallocBlock ：引用计数增加
+         
+         
+         Q:调用Copy时不同的__block对象究竟发生了什么：
+         
+         栈 ：从栈复制到堆，并且被Block持有
+         堆 ：被Block持有
+         
+         
+         */
         
     };
     
