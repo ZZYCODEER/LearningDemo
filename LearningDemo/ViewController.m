@@ -29,6 +29,8 @@
 #import "CustomButtonVC.h"
 #import "UIScrollViewVC.h"
 #import "RunLoopVC.h"
+#import "ReactiveCocoaVC.h"
+#import "DataSourceVC.h"
 
 @interface ViewController ()<UIAlertViewDelegate, UIScrollViewDelegate>
 @property (nonatomic, strong) PersonCopy *person;
@@ -36,6 +38,7 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) NSDictionary *dataDic;
 @property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) UIViewController *strongVC;
 
 @end
 
@@ -193,11 +196,14 @@
     
 //    RequestVC *vc = [[RequestVC alloc] init];
 //    DeepCopyVC *vc = [[DeepCopyVC alloc] init];
-//    AlgorithmVC *vc = [[AlgorithmVC alloc] init];
-//    CustomButtonVC *vc = [[CustomButtonVC alloc] init];
+//      AlgorithmVC *vc = [[AlgorithmVC alloc] init];
+ //    CustomButtonVC *vc = [[CustomButtonVC alloc] init];
 //    UIScrollViewVC *vc = [[UIScrollViewVC alloc] init];
-    RunLoopVC *vc = [[RunLoopVC alloc] init];
-
+//    RunLoopVC *vc = [[RunLoopVC alloc] init];
+    
+//    ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
+    
+    DataSourceVC *vc = [[DataSourceVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
     
@@ -209,6 +215,12 @@
 //    }];
 //    [self.navigationController pushViewController:blocksVC animated:YES];
 }
+
+- (void)backDelegateWithData:(NSString *)name
+{
+    self.title = name;
+}
+
 //plist文件存储数据
 - (void)configPlistData
 {
@@ -223,7 +235,7 @@
 {
     NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSString *fileName = [path stringByAppendingString:@"123.plist"];
-    NSLog(@"%@", fileName);
+//    NSLog(@"%@", fileName);
     NSArray *array = [NSArray arrayWithContentsOfFile:fileName];
 //    NSLog(@"resultArray ==  %@", array);
     

@@ -17,7 +17,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 100, 150, 150);
+    btn.backgroundColor = [UIColor orangeColor];
+    
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
+    
+}
 
+- (void)clickAction
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(backDelegateWithData:)]) {
+        [self.delegate backDelegateWithData:@"zzy"];
+    }
+    [self.navigationController popViewControllerAnimated:YES];
+        
+    
+    void (^block)() = ^{
+        NSLog(@"--");
+    };
+    
+    block();
+    
+    
+}
+
+-(void)dealloc
+{
+    NSLog(@"--%@ dealloc", NSStringFromClass([self class]));
 }
 
 /**

@@ -14,13 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - ReactiveObjC (3.0.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - ReactiveObjC
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
 
-PODFILE CHECKSUM: 249ae84e1339aff3b7f036290266b9c076f5acce
+PODFILE CHECKSUM: 6ae04f38b5c8fa19283dc3a0e134cfa835c17e5d
 
 COCOAPODS: 1.2.1

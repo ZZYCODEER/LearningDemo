@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TestDelegate <NSObject>
+
+- (void)backDelegateWithData:(NSString *)name;
+
+@end
+
 @interface DataStructureVC : UIViewController
+
+@property (nonatomic, weak) id <TestDelegate> delegate;
+
 
 @end

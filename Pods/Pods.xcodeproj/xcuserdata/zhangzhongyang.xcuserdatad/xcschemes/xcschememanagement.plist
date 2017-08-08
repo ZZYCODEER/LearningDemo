@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveObjC.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5D0230BC649DB8BF9FCBD1A11DE727A1</key>
+		<key>00ECFAE09D20E351511E9F8CCA169B3B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EC18AC0EB32794A4EFB2AD783492CAC</key>
+		<key>E6616D11C80301E90D8CB81B7A87E769</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5397CC8BD48F87F9C2A7D7AE2172DE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

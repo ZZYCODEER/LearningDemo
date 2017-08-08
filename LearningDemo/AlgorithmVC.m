@@ -7,10 +7,12 @@
 //  算法练习
 
 #import "AlgorithmVC.h"
+#import "DataStructureVC.h"
 
-@interface AlgorithmVC ()<UITextFieldDelegate>
+@interface AlgorithmVC ()<UITextFieldDelegate, TestDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *numberOneTF;
 @property (weak, nonatomic) IBOutlet UITextField *numberTwoTF;
+@property (nonatomic, strong) UIViewController *strongVC;
 
 @end
 
@@ -32,21 +34,117 @@
     NSMutableArray *array = [@[@12, @21, @34, @2, @23, @89, @9] mutableCopy];
 //    int array[6] = {1, 23, 45, 9, 33, 5};
     
-    for (int i = 0; i < 6; i++) {
-        for (int j = 0; j < 6 - i; j++) {
-            if (array[j] > array[j + 1]) {
-                NSNumber *temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
-            }
-        }
-    }
-    NSLog(@"%@", array);
+//    for (int i = 0; i < 6; i++) {
+//        for (int j = 0; j < 6 - i; j++) {
+//            if (array[j] > array[j + 1]) {
+//                NSNumber *temp = array[j];
+//                array[j] = array[j + 1];
+//                array[j + 1] = temp;
+//            }
+//        }
+//    }
+//    NSLog(@"%@", array);
 //    for (int i = 0; i < 6; i++) {
 //        printf("%d", array[i]);
 //    }
+    
+    NSUInteger count = array.count;
+    for (int i = 0; i < count / 2; i++) {
+        NSNumber *temp = array[i];
+        
+        array[i] = array[count - 1 - i];
+
+        array[count - 1 - i] = temp;
+        
+    }
+//    NSLog(@"zzy ===== %@", array);
+    
+    /**
+    
+    //二分查找法:0.000276
+    int a[8]= {-32, 12, 16, 24, 36, 45, 59, 98};
+    
+    int i = 98;
+    
+    int low = 0;
+    int high = 8 - 1;
+    
+    CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+
+    while (low <= high) {
+        
+        int middle = (low + high) / 2;
+        int temp = a[middle];
+        
+        if (i < temp) {
+            high = middle - 1;
+        }else if (i > temp){
+            low = middle + 1;
+        }else{
+            NSLog(@"找到这个值是----%d", temp);
+            
+            CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
+            
+            NSLog(@"耗时----%f", end - start);
+
+            
+            return;
+        }
+    }
+    
+
+//    for (int i = 0; i < 8; i++) {
+//        if (a[i] == 24) {
+//            NSLog(@"找到这个值是----%d", a[i]);
+//            CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
+//            NSLog(@"耗时----%f", end - start);
+//
+//        }
+//    }
+//    
+    */
+    
+    
+    /**
+     
+     1. 先找到中间位置 middle = (low + high) / 2;
+     
+     2. 取出中间位置的值 temp = a[middle];
+     
+     3. 比较中间位置的值跟输入的值 i 的大小：
+            如果 i < temp, 查找范围缩小到： 最小值 到 中间值的范围
+                high = middle - 1;
+            如果 i > temp, 查找范围缩小到： 中间值 到 最大值的范围
+                low = middle + 1
+            如果 i == temp， 找到
+     
+     
+     */
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(100, 300, 150, 150);
+    btn.backgroundColor = [UIColor orangeColor];
+    
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
+- (void)clickAction
+{
+    DataStructureVC *vc = [[DataStructureVC alloc] init];
+    
+    self.strongVC = vc;
+    vc.delegate = self;
+
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
+-(void)dealloc
+{
+    NSLog(@"--%@ dealloc", NSStringFromClass([self class]));
+}
 
 /////鸡兔同笼问题
 void getComfortableNumber()
