@@ -34,6 +34,7 @@
 #import "Test2VC.h"
 #import "UIImageView+WebCache.h"
 #import "GCDVC.h"
+#import "DataStructureVC.h"
 
 
 typedef void(^blk_t)(id obj);
@@ -278,7 +279,8 @@ typedef void(^blk_t)(id obj);
 //    DataSourceVC *vc = [[DataSourceVC alloc] init];
 //    Test2VC *vc = [[Test2VC alloc] init];
     
-    GCDVC *vc = [[GCDVC alloc] init];
+//    GCDVC *vc = [[GCDVC alloc] init];
+    DataStructureVC *vc = [[DataStructureVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
     
