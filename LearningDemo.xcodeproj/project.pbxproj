@@ -60,6 +60,7 @@
 		EDE456051F090EF800A456CB /* ZZYHTTPTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE456041F090EF800A456CB /* ZZYHTTPTestService.m */; };
 		EDEF8F181D9A4ED1002863DE /* Route.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDEF8F171D9A4ED1002863DE /* Route.plist */; };
 		EDF02C6F1EB1DA9A00819523 /* EffectiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF02C6E1EB1DA9A00819523 /* EffectiveVC.m */; };
+		EDF17E911F53B39000909605 /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF17E901F53B39000909605 /* GCDVC.m */; };
 		EDF842161EA854800019593A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF842151EA854800019593A /* Person.m */; };
 		EDF842191EA8548F0019593A /* ZhangPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF842181EA8548F0019593A /* ZhangPerson.m */; };
 		EDF8BF821E7D253700DF4B42 /* AutoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDF8BF811E7D253700DF4B42 /* AutoScrollView.m */; };
@@ -193,6 +194,8 @@
 		EDEF8F171D9A4ED1002863DE /* Route.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Route.plist; path = ../Route.plist; sourceTree = "<group>"; };
 		EDF02C6D1EB1DA9A00819523 /* EffectiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectiveVC.h; sourceTree = "<group>"; };
 		EDF02C6E1EB1DA9A00819523 /* EffectiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectiveVC.m; sourceTree = "<group>"; };
+		EDF17E8F1F53B39000909605 /* GCDVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC.h; sourceTree = "<group>"; };
+		EDF17E901F53B39000909605 /* GCDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC.m; sourceTree = "<group>"; };
 		EDF842141EA854800019593A /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		EDF842151EA854800019593A /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		EDF842171EA8548F0019593A /* ZhangPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhangPerson.h; sourceTree = "<group>"; };
@@ -297,6 +300,8 @@
 				ED06E7931F174BDD00694CF4 /* UIScrollViewVC.m */,
 				ED06E7951F1769F500694CF4 /* RunLoopVC.h */,
 				ED06E7961F1769F500694CF4 /* RunLoopVC.m */,
+				EDF17E8F1F53B39000909605 /* GCDVC.h */,
+				EDF17E901F53B39000909605 /* GCDVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -707,6 +712,7 @@
 				ED0D977E1E7D226B00F15AD0 /* DispatchQueueVC.m in Sources */,
 				ED0D978B1E7D226B00F15AD0 /* CustomeBtn.m in Sources */,
 				ED8DB72C1F08A967004D11AA /* ZZYHTTPService.m in Sources */,
+				EDF17E911F53B39000909605 /* GCDVC.m in Sources */,
 				EDA6428A1E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m in Sources */,
 				EDE456051F090EF800A456CB /* ZZYHTTPTestService.m in Sources */,
 				ED0D978A1E7D226B00F15AD0 /* CollectionView.m in Sources */,

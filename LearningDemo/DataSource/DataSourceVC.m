@@ -42,7 +42,49 @@ static NSString * const cellIdentifier = @"cells";
                                                         }];
     self.tableView.dataSource = _dataSource;
     [self.tableView registerClass:[DataSourceCell class] forCellReuseIdentifier:cellIdentifier];
+    
+    
+    
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        
+//        while (1) {
+//            NSLog(@"while begin");
+//            NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+//            [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+//            [runLoop runMode:NSDefaultRunLoopMode beforeDate:[NSDate distantFuture]];
+//            
+//            NSLog(@"while end");
+//
+//        }
+//        
+//    });
+
+    [self tryPerformSelectorOnMianThread];
 }
+
+
+- (void)tryPerformSelectorOnMianThread{
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        [self performSelector:@selector(mainThreadMethod) onThread:[NSThread currentThread] withObject:nil waitUntilDone:NO];
+        
+//        NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+//        [runLoop run];
+        
+        [self performSelector:@selector(mainThreadMethod) withObject:nil];
+    });
+}
+
+- (void)mainThreadMethod{
+    
+    NSLog(@"execute %s",__func__);
+    
+    NSLog(@"%@", [NSThread currentThread]);
+    
+}
+
 
 - (NSMutableArray *)dataArray
 {

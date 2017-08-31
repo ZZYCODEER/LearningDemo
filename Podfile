@@ -17,6 +17,7 @@ platform :ios,'8.0'
 target 'LearningDemo' do
 
 pod 'AFNetworking'
+pod 'SDWebImage'
 pod 'ReactiveObjC'
 
 

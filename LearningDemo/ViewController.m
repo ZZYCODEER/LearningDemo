@@ -31,7 +31,12 @@
 #import "RunLoopVC.h"
 #import "ReactiveCocoaVC.h"
 #import "DataSourceVC.h"
+#import "Test2VC.h"
+#import "UIImageView+WebCache.h"
+#import "GCDVC.h"
 
+
+typedef void(^blk_t)(id obj);
 @interface ViewController ()<UIAlertViewDelegate, UIScrollViewDelegate>
 @property (nonatomic, strong) PersonCopy *person;
 @property (nonatomic, strong) NSMutableString *string;
@@ -39,8 +44,9 @@
 @property (nonatomic, strong) NSDictionary *dataDic;
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIViewController *strongVC;
-
+@property (nonatomic, copy)blk_t blk;
 @end
+
 
 @implementation ViewController
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -129,6 +135,65 @@
 //    NSLog(@"%@", _dataDic);
     
     
+    
+    
+    NSMutableArray *mutaArr = [[NSMutableArray alloc] init];
+//   __block NSMutableArray * __weak weakArr = mutaArr;
+    
+   __block int a = 10;
+    
+    self.blk = ^(id obj){
+      
+        [mutaArr addObject:obj];
+        
+//        NSArray *array = [NSArray array];
+        
+//        mutaArr = array;
+        
+//        NSLog(@"array = %@", mutaArr);
+        
+//        NSLog(@"a /// %d", a);
+        
+        a = 12;
+        
+//        NSLog(@"a **** %d", a);
+
+    };
+    
+    _blk(@1);
+    
+//    NSLog(@"a == %d", a);
+    
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, CGRectGetHeight(self.view.frame) - 150, 100, 100)];
+    NSURL *url = [NSURL URLWithString:@"http://f.souche.com/fcfb7a280a9a8d44b79c4b66ddf34452.png?imageMogr2/auto-orient/thumbnail/640x/gravity/Center/crop/640x960/interlace/1/quality/70"];
+    
+    NSLog(@"执行开始");
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    NSURLSessionTask *task = [session dataTaskWithURL:[NSURL URLWithString:@"https://objccn.io/issue-5-4/"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            
+            NSLog(@"downLoad...");
+            
+        }];
+        [task resume];
+    
+ 
+    
+//    NSURLSessionDownloadTask *task = [session downloadTaskWithURL:url completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        
+//        NSLog(@"downLoad...");
+//    }];
+    
+    NSLog(@"执行结束");
+
+    
+//    [imageView sd_setImageWithURL:url];
+    [self.view addSubview:imageView];
+
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -136,6 +201,13 @@
     [super viewWillAppear:animated];
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
 //    [self.navigationController.navigationBar setBackgroundColor:[UIColor redColor]];
+    
+//    _blk(@1);
+//    _blk(@1);
+//
+//    _blk(@1);
+
+    
 }
 
 - (void)configure
@@ -203,7 +275,10 @@
     
 //    ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
     
-    DataSourceVC *vc = [[DataSourceVC alloc] init];
+//    DataSourceVC *vc = [[DataSourceVC alloc] init];
+//    Test2VC *vc = [[Test2VC alloc] init];
+    
+    GCDVC *vc = [[GCDVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
     
