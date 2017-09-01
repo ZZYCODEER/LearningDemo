@@ -274,13 +274,13 @@ typedef void(^blk_t)(id obj);
 //    UIScrollViewVC *vc = [[UIScrollViewVC alloc] init];
 //    RunLoopVC *vc = [[RunLoopVC alloc] init];
     
-//    ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
+    ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
     
 //    DataSourceVC *vc = [[DataSourceVC alloc] init];
 //    Test2VC *vc = [[Test2VC alloc] init];
     
 //    GCDVC *vc = [[GCDVC alloc] init];
-    DataStructureVC *vc = [[DataStructureVC alloc] init];
+//    DataStructureVC *vc = [[DataStructureVC alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
     
     

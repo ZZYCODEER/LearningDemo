@@ -9,7 +9,7 @@
 #import "AlgorithmVC.h"
 #import "DataStructureVC.h"
 
-@interface AlgorithmVC ()<UITextFieldDelegate, TestDelegate>
+@interface AlgorithmVC ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *numberOneTF;
 @property (weak, nonatomic) IBOutlet UITextField *numberTwoTF;
 @property (nonatomic, strong) UIViewController *strongVC;
@@ -135,7 +135,6 @@
     DataStructureVC *vc = [[DataStructureVC alloc] init];
     
     self.strongVC = vc;
-    vc.delegate = self;
 
     [self.navigationController pushViewController:vc animated:YES];
 }

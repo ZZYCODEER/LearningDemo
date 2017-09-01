@@ -74,6 +74,50 @@ void createListTail(LinkList *list, int n)
     
 }
 
+void createLinkList(LinkList *L, int n)
+{
+    LinkList p, r;
+    
+    *L = (LinkList)malloc(sizeof(Node));
+    
+    r = *L;
+    
+    for (int i = 0; i < n; i++) {
+        p = (Node *)malloc(sizeof(Node));
+        
+        p->data = rand() % 100 + 1;
+        
+        r->next = p;
+        
+        r = p;
+    }
+    
+    r ->next = NULL;
+}
+
+void clearList(LinkList *list)
+{
+    LinkList p,q;
+    
+    p = (*list) ->next;  //指向第一个节点
+    
+    while (p) {  //没有到表尾
+        q = p->next;
+        free(p);
+        p = q;
+    }
+    
+    (*list)->next = NULL;  //头结点指针域为空
+}
+
+
+
+
+
+
+
+
+
 
 @implementation DataStructureVC
 

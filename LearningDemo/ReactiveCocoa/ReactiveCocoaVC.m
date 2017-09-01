@@ -54,6 +54,18 @@
     }];
     
     
+    
+    NSArray *array = @[ @1, @2, @3 ];
+    RACSequence *steam = [array rac_sequence];
+    
+   NSLog(@"%@", [[steam map:^id _Nullable(id  _Nullable value) {
+        return [value stringValue];
+    }] foldLeftWithStart:@"" reduce:^id _Nullable(id  _Nullable accumulator, id  _Nullable value) {
+        
+        return [accumulator stringByAppendingString:value];
+
+    }]);
+    
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
