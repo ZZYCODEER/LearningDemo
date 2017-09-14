@@ -35,6 +35,9 @@
 #import "UIImageView+WebCache.h"
 #import "GCDVC.h"
 #import "DataStructureVC.h"
+#import "ModelCopyVC.h"
+#import "CarModel.h"
+#import "UIImageViewAnimatedVC.h"
 
 
 typedef void(^blk_t)(id obj);
@@ -46,6 +49,8 @@ typedef void(^blk_t)(id obj);
 @property (nonatomic, strong) UIButton *button;
 @property (nonatomic, strong) UIViewController *strongVC;
 @property (nonatomic, copy)blk_t blk;
+@property (nonatomic, strong) CarModel *carModel;
+
 @end
 
 
@@ -274,13 +279,20 @@ typedef void(^blk_t)(id obj);
 //    UIScrollViewVC *vc = [[UIScrollViewVC alloc] init];
 //    RunLoopVC *vc = [[RunLoopVC alloc] init];
     
-    ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
+//    ReactiveCocoaVC *vc = [[ReactiveCocoaVC alloc] init];
     
 //    DataSourceVC *vc = [[DataSourceVC alloc] init];
 //    Test2VC *vc = [[Test2VC alloc] init];
     
 //    GCDVC *vc = [[GCDVC alloc] init];
 //    DataStructureVC *vc = [[DataStructureVC alloc] init];
+    
+//    CarModel *model = [CarModel new];
+//    model.carName = @"法拉利";
+//    
+//    ModelCopyVC *vc = [[ModelCopyVC alloc] init];
+    UIImageViewAnimatedVC *vc = [[UIImageViewAnimatedVC alloc] init];
+    
     [self.navigationController pushViewController:vc animated:YES];
     
     

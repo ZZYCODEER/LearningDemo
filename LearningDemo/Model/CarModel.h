@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CarModel : NSObject
+@interface CarModel : NSObject<NSCopying>
 
 @property (nonatomic, copy) NSString *ID;
 @property (nonatomic, copy) NSString *carName;

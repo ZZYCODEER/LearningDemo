@@ -18,38 +18,14 @@ typedef struct Node
     struct Node *next;
 } Node;
 
-
 //定义链表
 typedef struct Node *LinkList;
-
-//单链表的读取: 初始条件，顺序线性表L已经存在， 1<= i <= ListLength(L)， 用e返回L中第i个元素的值
- BOOL getElem(LinkList L, int i, int *e)
-{
-    int j;
-    LinkList p;  //声明一个指针p
-    p = L->next;
-    
-    j = 1;
-    
-    while (p && j < i) {
-        p = p->next;
-        ++j;
-    }
-    
-    if (!p || j > i) {
-        return NO;
-    }
-    
-    *e = p->data;
-    
-    return YES;
-}
 
 //单链表的建表:
 void createListTail(LinkList *list, int n)
 {
     LinkList p, r;
-    *list = (LinkList)malloc(sizeof(Node));  //整个线性表
+    *list = (Node *)malloc(sizeof(Node));  //整个线性表，注意这里*操作符为解引用操作符，它返回指针p所指的对象
     
     //r为指向尾部的结点
     r = *list;
@@ -71,12 +47,12 @@ void createListTail(LinkList *list, int n)
     
     //表示当前链表结束
     r->next = NULL;
-    
 }
 
 void createLinkList(LinkList *L, int n)
 {
     LinkList p, r;
+    
     
     *L = (LinkList)malloc(sizeof(Node));
     
@@ -93,6 +69,29 @@ void createLinkList(LinkList *L, int n)
     }
     
     r ->next = NULL;
+}
+
+//单链表的读取: 初始条件，顺序线性表L已经存在， 1<= i <= ListLength(L)， 用e返回L中第i个元素的值
+BOOL getElem(LinkList L, int i, int *e)
+{
+    int j;
+    LinkList p;  //声明一个指针p
+    p = L->next;
+    
+    j = 1;
+    
+    while (p && j < i) {
+        p = p->next;
+        ++j;
+    }
+    
+    if (!p || j > i) {
+        return NO;
+    }
+    
+    *e = p->data;
+    
+    return YES;
 }
 
 void clearList(LinkList *list)

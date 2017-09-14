@@ -25,7 +25,6 @@
     [btn setTitle:@"runLoop" forState:UIControlStateNormal];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];
-
     
 }
 

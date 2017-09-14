@@ -30,6 +30,7 @@
 		ED0D978B1E7D226B00F15AD0 /* CustomeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D97771E7D226B00F15AD0 /* CustomeBtn.m */; };
 		ED0D978C1E7D226B00F15AD0 /* EnlargeFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0D97791E7D226B00F15AD0 /* EnlargeFlowLayout.m */; };
 		ED10FD061F2EDE64002EC096 /* ReactiveCocoaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED10FD051F2EDE64002EC096 /* ReactiveCocoaVC.m */; };
+		ED1C71441F60F3790089D414 /* ModelCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1C71431F60F3790089D414 /* ModelCopyVC.m */; };
 		ED22D91A1F0A214900DAF171 /* DeepCopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED22D9191F0A214900DAF171 /* DeepCopyVC.m */; };
 		ED3C2ABB1F08F09900D06C6B /* ZZYUserInfoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3C2ABA1F08F09900D06C6B /* ZZYUserInfoConfig.m */; };
 		ED4AB8E21F57E6A9007850E0 /* DataStructureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED4AB8E11F57E6A9007850E0 /* DataStructureVC.m */; };
@@ -40,6 +41,8 @@
 		ED738B0D1F39630300D307D3 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = ED738B0C1F39630300D307D3 /* TableViewDataSource.m */; };
 		ED8DB7291F089A50004D11AA /* RequestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8DB7281F089A50004D11AA /* RequestVC.m */; };
 		ED8DB72C1F08A967004D11AA /* ZZYHTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8DB72B1F08A967004D11AA /* ZZYHTTPService.m */; };
+		ED8E02191F6A75D500914EAD /* UIImageViewAnimatedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8E02181F6A75D500914EAD /* UIImageViewAnimatedVC.m */; };
+		ED8E021B1F6A770000914EAD /* refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED8E021A1F6A770000914EAD /* refresh@2x.png */; };
 		EDA6428A1E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA642891E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m */; };
 		EDA6428D1E8EA27B00D521FA /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA6428C1E8EA27B00D521FA /* CarModel.m */; };
 		EDB291A91F0B3D2500BD827D /* AlgorithmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB291A71F0B3D2500BD827D /* AlgorithmVC.m */; };
@@ -137,6 +140,8 @@
 		ED0D97791E7D226B00F15AD0 /* EnlargeFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlargeFlowLayout.m; sourceTree = "<group>"; };
 		ED10FD041F2EDE64002EC096 /* ReactiveCocoaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoaVC.h; sourceTree = "<group>"; };
 		ED10FD051F2EDE64002EC096 /* ReactiveCocoaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaVC.m; sourceTree = "<group>"; };
+		ED1C71421F60F3790089D414 /* ModelCopyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelCopyVC.h; sourceTree = "<group>"; };
+		ED1C71431F60F3790089D414 /* ModelCopyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelCopyVC.m; sourceTree = "<group>"; };
 		ED22D9181F0A214900DAF171 /* DeepCopyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepCopyVC.h; sourceTree = "<group>"; };
 		ED22D9191F0A214900DAF171 /* DeepCopyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeepCopyVC.m; sourceTree = "<group>"; };
 		ED34CD251DF50E4200D362A0 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -159,6 +164,9 @@
 		ED8DB7281F089A50004D11AA /* RequestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestVC.m; sourceTree = "<group>"; };
 		ED8DB72A1F08A967004D11AA /* ZZYHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYHTTPService.h; sourceTree = "<group>"; };
 		ED8DB72B1F08A967004D11AA /* ZZYHTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYHTTPService.m; sourceTree = "<group>"; };
+		ED8E02171F6A75D500914EAD /* UIImageViewAnimatedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewAnimatedVC.h; sourceTree = "<group>"; };
+		ED8E02181F6A75D500914EAD /* UIImageViewAnimatedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewAnimatedVC.m; sourceTree = "<group>"; };
+		ED8E021A1F6A770000914EAD /* refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refresh@2x.png"; sourceTree = "<group>"; };
 		EDA642881E8EA20F00D521FA /* KVCAndRuntimeToModelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCAndRuntimeToModelVC.h; sourceTree = "<group>"; };
 		EDA642891E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCAndRuntimeToModelVC.m; sourceTree = "<group>"; };
 		EDA6428B1E8EA27B00D521FA /* CarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarModel.h; sourceTree = "<group>"; };
@@ -302,6 +310,10 @@
 				ED06E7961F1769F500694CF4 /* RunLoopVC.m */,
 				EDF17E8F1F53B39000909605 /* GCDVC.h */,
 				EDF17E901F53B39000909605 /* GCDVC.m */,
+				ED1C71421F60F3790089D414 /* ModelCopyVC.h */,
+				ED1C71431F60F3790089D414 /* ModelCopyVC.m */,
+				ED8E02171F6A75D500914EAD /* UIImageViewAnimatedVC.h */,
+				ED8E02181F6A75D500914EAD /* UIImageViewAnimatedVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -498,6 +510,7 @@
 		EDF8BF961E7D31CF00DF4B42 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				ED8E021A1F6A770000914EAD /* refresh@2x.png */,
 				EDF8BF971E7D31CF00DF4B42 /* 0.jpg */,
 				EDF8BF981E7D31CF00DF4B42 /* 1.jpg */,
 				EDF8BF991E7D31CF00DF4B42 /* 2.jpg */,
@@ -628,6 +641,7 @@
 				EDF8BF9E1E7D31CF00DF4B42 /* 2.jpg in Resources */,
 				EDD36A771D6AABB300760AA3 /* Main.storyboard in Resources */,
 				EDEF8F181D9A4ED1002863DE /* Route.plist in Resources */,
+				ED8E021B1F6A770000914EAD /* refresh@2x.png in Resources */,
 				EDF8BF9C1E7D31CF00DF4B42 /* 0.jpg in Resources */,
 				ED0D97811E7D226B00F15AD0 /* HitTestingVC.xib in Resources */,
 				EDF8BF9D1E7D31CF00DF4B42 /* 1.jpg in Resources */,
@@ -720,6 +734,7 @@
 				ED0D977E1E7D226B00F15AD0 /* DispatchQueueVC.m in Sources */,
 				ED0D978B1E7D226B00F15AD0 /* CustomeBtn.m in Sources */,
 				ED8DB72C1F08A967004D11AA /* ZZYHTTPService.m in Sources */,
+				ED1C71441F60F3790089D414 /* ModelCopyVC.m in Sources */,
 				EDF17E911F53B39000909605 /* GCDVC.m in Sources */,
 				EDA6428A1E8EA20F00D521FA /* KVCAndRuntimeToModelVC.m in Sources */,
 				EDE456051F090EF800A456CB /* ZZYHTTPTestService.m in Sources */,
@@ -734,6 +749,7 @@
 				ED0D97871E7D226B00F15AD0 /* TestVC.m in Sources */,
 				EDF842161EA854800019593A /* Person.m in Sources */,
 				ED0D97821E7D226B00F15AD0 /* KeyboradVC.m in Sources */,
+				ED8E02191F6A75D500914EAD /* UIImageViewAnimatedVC.m in Sources */,
 				ED06E7971F1769F500694CF4 /* RunLoopVC.m in Sources */,
 				ED5FDA501ECC27F700D56065 /* ZZYModule.m in Sources */,
 				ED22D91A1F0A214900DAF171 /* DeepCopyVC.m in Sources */,
